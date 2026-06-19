@@ -1,5 +1,6 @@
 package com.conex.asteri.auth.dto;
 
-public class LoginRequest {
-
+public record LoginRequest(
+        String username,
+        String password) {
 }
