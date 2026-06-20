@@ -2,6 +2,8 @@ package com.conex.asteri.xui.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import lombok.Data;
+
 // Llama las clases para sacar la info del JSON
 /*
   {
@@ -10,12 +12,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 }
 
 */
+@Data
 public class XuiAuthResponse {
 
-    @JsonProperty("user_info")
-    private XuiUserInfo userInfo;
+  @JsonProperty("user_info")
+  private XuiUserInfo userInfo;
 
-    @JsonProperty("server_info")
-    private XuiServerInfo serverInfo;
+  @JsonProperty("server_info")
+  private XuiServerInfo serverInfo;
 
 }
